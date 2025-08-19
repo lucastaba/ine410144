@@ -1,0 +1,89 @@
+# Vehicle Dynamics Analysis
+
+## Metric for Response Time Analysis
+For all exercises, the metric adopted to evaluate the system’s response time will be **the time required for the variable of interest (e.g., speed) to reach 95% of its steady-state value after a step input in the command (e.g., acceleration)**.
+
+## Exercise 1 — Variation of Mass and Center of Mass
+### Objective
+Evaluate the impact of vehicle mass and center of mass position on vehicle dynamics.
+### Expanded Activities
+- Identify where in the simulator the mass and center of mass are defined.
+- Document the procedure for changing these parameters.
+
+From the [ROS documentation](https://docs.ros.org/en/foxy/How-To-Guides/Node-arguments.html):
+> `ros2 run my_package node_executable --ros-args ...`
+
+We can look our launch script, `run_in_container.sh`, and notice that the required parameters are given as command line arguments:
+```bash
+...
+
+docker run -d --rm --init \
+  --network=host \
+  --env ROS_DOMAIN_ID="$ROS_DOMAIN_ID" \
+  --env RMW_IMPLEMENTATION="$RMW_IMPLEMENTATION" \
+  --env DISPLAY=$DISPLAY \
+  --name vehicle_model_double_track_cpp \
+  -v "$(pwd)/config:/dev_ws/config" \
+  -v /tmp/.X11-unix:/tmp/.X11-unix \
+  open_car_dynamics:local \
+  bash -c "source /dev_ws/install/setup.bash && ros2 run vehicle_model_nodes vehicle_model_double_track_cpp_node --ros-args --params-file /dev_ws/config/example_config.yaml"
+```
+Where,
+- `vehicle_model_nodes`: package
+- `vehicle_model_double_track_cpp_node`: node_executable
+- `-ros-args --params-file /dev_ws/config/example_config.yaml"`: model parameter
+
+The parameter file given by `example_config.yaml` overwrites the  `vehicle_model_double_track_cpp_node.cpp` parameters. Bellow we can see an example on how this works:
+1. ` class VehicleModelDoubleTrack` declare parameters:
+```cpp
+...
+  // Actuation delay
+  param_manager_->declare_parameter(
+        "delay.steering.actuation_delay_us", 50'000,
+        tam::types::param::ParameterType::INTEGER, "");
+...
+```
+2. `ROS2 load_overwrites_from_yaml` overwrites that parameter with `YAML` file content:
+```cpp
+...
+  rclcpp::ParameterMap map =
+    rclcpp::parameter_map_from_yaml_file(path);
+
+  std::vector<rclcpp::Parameter> params = map[namesp];
+  for (const auto & param : params) {
+    if (!node_instance->has_parameter(param.get_name()) && throw_if_overwr_non_existent_param) {
+      throw rclcpp::exceptions::ParameterNotDeclaredException(
+        "Trying to overwrite non-existent Parameter " + param.get_name());
+    }
+    node_instance->set_parameter(param);
+  }
+...
+```
+3. `example_config.yaml` parameter:
+```yaml
+/simulation/VehicleModel:
+  ros__parameters:
+    delay:
+      steering:
+        actuation_delay_us: 50000
+```
+
+Thus, to change the vehicle mass, we can change the corresponding vehicle mass value in `example_config.yaml`:
+```yaml
+/simulation/VehicleModel:
+  ros__parameters:
+    vehicle_dynamics_double_track:
+      m: <new_value> # New value in Kg
+```
+
+
+### Simulations with Variations
+- Run simulations with at least 3 different masses (e.g., 1000 kg, 1200 kg, 1400 kg).
+- For each mass, test at least 2 center of mass positions (e.g., nominal position, ±0.2 m longitudinal shift).
+### Variation of Step Amplitude
+- Apply acceleration steps of different amplitudes (e.g., 0.5 m/s², 1.0 m/s², 2.0 m/s²).
+- Evaluate how system nonlinearity and tire slip influence response time as the command amplitude changes.
+### Detailed Data Collection
+### Response Time Analysis
+### Integration Interval Modification
+### Interpretation
