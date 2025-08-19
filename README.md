@@ -1,3 +1,4 @@
+![GitHub License](https://img.shields.io/github/license/lucastaba/ine410144)
 # INE410144
 Exercises solutions for INE410144 class
 
