@@ -107,3 +107,21 @@ Evaluate the impact of trajectories with different curvatures on vehicle dynamic
 - Evaluate stability conditions and possible loss of traction.
 ### Report
 - Present analyses and comparative graphs of response time.
+## Exercise 3 — Road Surface and Grip Conditions
+### Objective
+Evaluate the effect of road surface friction coefficient on vehicle response time and stability.
+### Expanded Activities
+### Configuration
+- Adjust the friction coefficient for dry, wet, and slippery surfaces.
+### Simulations
+- Apply acceleration steps of different amplitudes for each road condition.
+- Record speed response, tire forces, and relevant angles.
+### Response Time Analysis
+- Determine the time to reach 95% of the final speed value after the step for each surface and amplitude.
+- Compare how friction and step amplitude affect response time and control.
+### Integration Interval Modification
+- Test different command frequencies to evaluate the impact on response time under different road conditions.
+### Limit Testing
+- Analyze behavior near grip limits.
+### Report
+- Document results and conclusions on the effect of road surface, step amplitude, and response time.
