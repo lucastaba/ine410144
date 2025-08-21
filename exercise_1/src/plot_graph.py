@@ -35,8 +35,6 @@ def parseArguments():
     parser.add_argument("-y", type=str, nargs="+", required=True)
     return parser.parse_args()
 
-# data = pd.read_csv(filename)
-
 def main():
     args = parseArguments()
     sampleRate = args.s
@@ -65,6 +63,7 @@ def main():
         if (ax_idx_col == nPlots):
             ax_idx_col = 0
             ax_idx_row += 1
+    fig.tight_layout()
     plt.show()
 
 if __name__ == "__main__":
