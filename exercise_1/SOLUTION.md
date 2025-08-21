@@ -87,3 +87,23 @@ Thus, to change the vehicle mass, we can change the corresponding vehicle mass v
 ### Response Time Analysis
 ### Integration Interval Modification
 ### Interpretation
+## Exercise 2 — Trajectories with Different Curvatures
+### Objective
+Evaluate the impact of trajectories with different curvatures on vehicle dynamics and response time.
+### Expanded Activities
+### Trajectory Development
+- Create trajectories: straight, gentle curve, medium curve, and tight curve.
+- Generate steering commands to follow these trajectories.
+### Simulation Execution
+- Apply acceleration steps of different amplitudes before or during the execution of the trajectory.
+- Record the vehicle’s speed response and steering angle.
+### Response Time Analysis
+- Measure the time for speed to reach 95% of its final value after the step input.
+- Measure the time for the steering angle to reach 95% of the desired value during curves.
+- Compare across trajectories, speeds, and step amplitudes.
+### Integration Interval Modification
+- Vary control and data collection frequency to study its impact on response time and trajectory tracking.
+### Additional Exploration
+- Evaluate stability conditions and possible loss of traction.
+### Report
+- Present analyses and comparative graphs of response time.

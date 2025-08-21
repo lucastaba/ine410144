@@ -53,8 +53,9 @@ class VehicleController(Node):
         msg.stamp = self.get_clock().now().to_msg()
 
         # Lateral control (keep straight)
+        steering_tire_angle_degree = 0
         lateral = AckermannLateralCommand()
-        lateral.steering_tire_angle = 0.0
+        lateral.steering_tire_angle = steering_tire_angle_degree*math.pi/180
         lateral.steering_tire_rotation_rate = 0.0
 
         # Longitudinal control
