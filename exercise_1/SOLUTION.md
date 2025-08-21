@@ -82,13 +82,19 @@ Thus, to change the vehicle mass, we can change the corresponding vehicle mass v
 
 ![600_1p8](./img/vehicle_signals_600_1p8_20250820_125540.csv.png)
 ![600_2p0](./img/vehicle_signals_600_2p0_20250820_131155.csv.png)
+
 *Simulation for fixed mass 600kg and varying COG*
+
 ![800_1p8](./img/vehicle_signals_800_1p8_20250820_124423.csv.png)
 ![800_2p0](./img/vehicle_signals_800_2p0_20250820_130848.csv.png)
+
 *Simulation for fixed mass 800kg and varying COG*
+
 ![1200_1p8](./img/vehicle_signals_1200_1p8_20250820_125831.csv.png)
 ![1200_2p0](./img/vehicle_signals_1200_2p0_20250820_130454.csv.png)
+
 *Simulation for fixed mass 1200kg and varying COG*
+
 ### Variation of Step Amplitude
 - Apply acceleration steps of different amplitudes (e.g., 0.5 m/s², 1.0 m/s², 2.0 m/s²).
 - Evaluate how system nonlinearity and tire slip influence response time as the command amplitude changes.
@@ -96,6 +102,7 @@ Thus, to change the vehicle mass, we can change the corresponding vehicle mass v
 ![800_1p8_acc_0p5](./img/vehicle_signals_800_1p8_acc_0p5_20250820_132808.csv.png)
 ![800_1p8_acc_1p0](./img/vehicle_signals_800_1p8_20250820_124423.csv.png)
 ![800_1p8_acc_2p0](./img/vehicle_signals_800_1p8_acc_2p0_20250820_132424.csv.png)
+
 *Simulation for fixed mass and COG varying acceleration*
 ### Detailed Data Collection
 ### Response Time Analysis
