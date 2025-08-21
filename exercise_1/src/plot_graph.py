@@ -33,6 +33,7 @@ def parseArguments():
     parser.add_argument("csv_file")
     parser.add_argument("-s", type=float, required=True)
     parser.add_argument("-y", type=str, nargs="+", required=True)
+    parser.add_argument("-ng", action="store_false", help="No GUI. Save PNG file with same csv_file_name.")
     return parser.parse_args()
 
 def main():
@@ -64,7 +65,11 @@ def main():
             ax_idx_col = 0
             ax_idx_row += 1
     fig.tight_layout()
-    plt.show()
+
+    if args.ng:
+        plt.show()
+    else:
+        plt.savefig(args.csv_file+".png")
 
 if __name__ == "__main__":
     main()
