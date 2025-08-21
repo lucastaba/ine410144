@@ -4,6 +4,7 @@ import argparse
 import os.path
 import csv
 import numpy as np
+import math
 
 def numberOfRows(csvFile:str):
     count = 0
@@ -31,7 +32,7 @@ def parseArguments():
     parser = argparse.ArgumentParser()
     parser.add_argument("csv_file")
     parser.add_argument("-s", type=float, required=True)
-    parser.add_argument("-y", type=str, required=True)
+    parser.add_argument("-y", type=str, nargs="+", required=True)
     return parser.parse_args()
 
 # data = pd.read_csv(filename)
@@ -44,16 +45,26 @@ def main():
         print("file does not exist")
         exit(0)
 
-    if not checkNameInCSV(args.y, args.csv_file)[0]:
-        print(f"[{args.y}] not found")
-        exit(0)
+    for name in args.y:
+        if not checkNameInCSV(name, args.csv_file)[0]:
+            print(f"[{name}] not found")
+            exit(0)
     
     startTime = 0
     finalTime = (numberOfRows(args.csv_file) - 1)*sampleRate # first row is header
     time_axis = np.arange(startTime, finalTime, sampleRate).tolist()
     data = pd.read_csv(args.csv_file)
-    fig, ax = plt.subplots()
-    ax.plot(time_axis, data[args.y])
+    nPlots = math.ceil(math.sqrt(len(args.y)))
+    fig, ax = plt.subplots(nPlots, nPlots, sharex="row")
+    ax_idx_row = 0
+    ax_idx_col = 0
+    for name in args.y:
+        ax[ax_idx_row, ax_idx_col].plot(time_axis, data[name])
+        ax[ax_idx_row, ax_idx_col].set_title(name)
+        ax_idx_col += 1
+        if (ax_idx_col == nPlots):
+            ax_idx_col = 0
+            ax_idx_row += 1
     plt.show()
 
 if __name__ == "__main__":
