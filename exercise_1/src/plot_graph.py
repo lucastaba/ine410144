@@ -31,8 +31,8 @@ def checkFileExists(filePath: str):
 def parseArguments():
     parser = argparse.ArgumentParser()
     parser.add_argument("csv_file")
-    parser.add_argument("-s", type=float, required=True)
-    parser.add_argument("-y", type=str, nargs="+", required=True)
+    parser.add_argument("-s", type=float, required=True, help="The sample data rate in seconds.")
+    parser.add_argument("-y", type=str, nargs="+", required=True, help="The signal to plot.")
     parser.add_argument("-ng", action="store_false", help="No GUI. Save PNG file with same csv_file_name.")
     return parser.parse_args()
 

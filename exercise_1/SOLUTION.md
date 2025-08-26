@@ -104,6 +104,8 @@ Thus, to change the vehicle mass, we can change the corresponding vehicle mass v
 ![800_1p8_acc_2p0](./img/vehicle_signals_800_1p8_acc_2p0_20250820_132424.csv.png)
 
 *Simulation for fixed mass and COG varying acceleration*
+
+From the collected results depicted on the images, it is noticeable that the car speed does **NOT** increase linearly with the input acceleration. We could expect that twice the input acceleration would make the car get to the same speed twice as fast. However, the images shows otherwise.
 ### Detailed Data Collection
 ### Response Time Analysis
 ### Integration Interval Modification
