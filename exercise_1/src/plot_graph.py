@@ -32,6 +32,7 @@ def parseArguments():
     parser = argparse.ArgumentParser()
     parser.add_argument("csv_file")
     parser.add_argument("-s", type=float, required=True, help="The sample data rate in seconds.")
+    parser.add_argument("-x", type=str, help="The signal to plot as X axis.")
     parser.add_argument("-y", type=str, nargs="+", required=True, help="The signal to plot.")
     parser.add_argument("-ng", action="store_false", help="No GUI. Save PNG file with same csv_file_name.")
     parser.add_argument("-pk", action="store_true", help="Find the time to get from 0 to 100km/h.")
@@ -68,7 +69,10 @@ def main():
     ax_idx_row = 0
     ax_idx_col = 0
     for name in args.y:
-        ax[ax_idx_row, ax_idx_col].plot(time_axis, data[name])
+        if args.x:
+            ax[ax_idx_row, ax_idx_col].plot(data[args.x], data[name])
+        else:
+            ax[ax_idx_row, ax_idx_col].plot(time_axis, data[name])
         ax[ax_idx_row, ax_idx_col].set_title(name)
         ax_idx_col += 1
         if (ax_idx_col == nPlots):

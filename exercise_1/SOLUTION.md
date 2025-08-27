@@ -138,19 +138,32 @@ Evaluate the impact of trajectories with different curvatures on vehicle dynamic
 ### Trajectory Development
 - Create trajectories: straight, gentle curve, medium curve, and tight curve.
 - Generate steering commands to follow these trajectories.
+
+![800_1p8_angle_0](./img/vehicle_signals_800_1p8_angle_0_20250821_014003.csv.png)
+![800_1p8_angle_15](./img/vehicle_signals_800_1p8_angle_15_20250821_014708.csv.png)
+![800_1p8_angle_45](./img/vehicle_signals_800_1p8_angle_45_20250821_014413.csv.png)
+
+*Simulation for different trajectories*
+
 ### Simulation Execution
 - Apply acceleration steps of different amplitudes before or during the execution of the trajectory.
 - Record the vehicle’s speed response and steering angle.
+
+![v_800_1p8_angle_45](./img/v_vehicle_signals_800_1p8_angle_45_20250821_014413.csv.png)
+![v_800_1p8_acc_2p0_angle_45](./img/v_vehicle_signals_800_1p8_acc_2p0_angle_45_20250821_015510.csv.png)
+
+*Simulation showing vehicle speed for 45 degree steering angle and different accelerations*
+
+![800_1p8_angle_45](./img/vehicle_signals_800_1p8_angle_45_20250821_014413.csv.png)
+![800_1p8_acc_2p0_angle_45](./img/vehicle_signals_800_1p8_acc_2p0_angle_45_20250821_015510.csv.png)
+
+*Simulation showing vehicle movement for 45 degree steering angle and different accelerations*
 ### Response Time Analysis
 - Measure the time for speed to reach 95% of its final value after the step input.
 - Measure the time for the steering angle to reach 95% of the desired value during curves.
 - Compare across trajectories, speeds, and step amplitudes.
-### Integration Interval Modification
-- Vary control and data collection frequency to study its impact on response time and trajectory tracking.
-### Additional Exploration
-- Evaluate stability conditions and possible loss of traction.
-### Report
-- Present analyses and comparative graphs of response time.
+
+For selected value, the simulation does **NOT** reached the steady state. Note the trajectory for acceleration 2.0 m/s² and steering angle 45 degree, it keeps increasing the circle diameter.
 ## Exercise 3 — Road Surface and Grip Conditions
 ### Objective
 Evaluate the effect of road surface friction coefficient on vehicle response time and stability.
