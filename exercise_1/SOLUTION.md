@@ -108,8 +108,29 @@ Thus, to change the vehicle mass, we can change the corresponding vehicle mass v
 From the collected results depicted on the images, it is noticeable that the car speed does **NOT** increase linearly with the input acceleration. We could expect that twice the input acceleration would make the car get to the same speed twice as fast. However, the images shows otherwise.
 ### Detailed Data Collection
 ### Response Time Analysis
+- Determine the time it takes for speed to reach 95% of its final (steady-state) value after the step input for each amplitude.
+
+|Test#| Weight (kg) | COG (m) | Accel (m²) | Time to 95% max speed (s) |
+|-|-|-|-|-|
+|1|1200|1.8|1.0|68.5|
+|2|1200|2.0|1.0|68.7|
+|3|800|1.8|1.0|16.2|
+|4|800|1.8|0.5|124.5|
+|5|800|1.8|2.0|17.3|
+|6|800|2.0|1.0|40.4|
+|7|600|1.8|1.0|40.1|
+|8|600|2.0|1.0|29.8|
+
+- Compare response times for different masses, centers of mass, and step amplitudes.
+
+The center for mass, mass and acceleration has a significant impact on time to reach the steady state. Looking at the simulation results, we could infer that the tire loses grip on high acceleration values or when the center of mass changes. The last one has greater impact on lower mass value than higher mass values.
 ### Integration Interval Modification
-### Interpretation
+- Change the integration interval to verify how command update and data collection frequency affect the measured response time.
+
+![800_1p8_int_0p008](./img/vehicle_signals_800_1p8_integration_0p008_20250820_134816.csv.png)
+![800_1p8_int_0p0016](./img/vehicle_signals_800_1p8_integration_0p0016_20250820_134543.csv.png)
+
+*Simulation for different integration times*
 ## Exercise 2 — Trajectories with Different Curvatures
 ### Objective
 Evaluate the impact of trajectories with different curvatures on vehicle dynamics and response time.
