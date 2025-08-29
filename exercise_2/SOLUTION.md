@@ -13,9 +13,7 @@
 
     The area of the bounding box is,
 
-    $$
-    box_{area}=(x_{max}-x_{min})\times(y_{max}-y_{min})
-    $$
+    $$box_{area}=(x_{max}-x_{min})\times(y_{max}-y_{min})$$
 
     Then,
 
@@ -25,7 +23,7 @@
 
     The $\displaystyle box_{area}=20$.
 
-2. **Bounding Boxes and Occupied Space**
+1. **Bounding Boxes and Occupied Space**
 - (a) Given a 3D bounding box with parameters $\displaystyle (x,y,z,l,w,h,\Psi)=(5,3,0,4,2,2,45^\circ)$, compute the volume occupied by the object.
 
     The volume $\displaystyle box_{volume}$ occupied by the object is given by:
