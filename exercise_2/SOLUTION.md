@@ -24,3 +24,18 @@ box_{area}=(6-2)\times(8-3) = 20
 ```
 
 The $\displaystyle box_{area}=20$.
+
+2. **Bounding Boxes and Occupied Space**
+- (a) Given a 3D bounding box with parameters $\displaystyle (x,y,z,l,w,h,\Psi)=(5,3,0,4,2,2,45^\circ)$, compute the volume occupied by the object.
+
+
+
+- (b) If the bounding box in (a) is rotated by $\displaystyle \Psi=45^\circ$, sketch (or describe) how the occupied space differs compared to $\displaystyle \Psi=0^\circ$.
+
+
+
+- (c) Two 2D bounding boxes $\textstyle B_1\; and\; B_2$ are defined as:
+    ```math
+    B_1:(x_{min},y_{min},x_{max},y_{max})=(0,0,4,3),\; B_2:(2,1,6,5).
+    ```
+    Compute their intersection-over-union (IoU).
