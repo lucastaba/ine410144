@@ -44,11 +44,19 @@
     $$P_r=R_z(\theta) \times P=\begin{bmatrix}
         \cos\theta & -\sin\theta & 0 \\\\ \sin\theta & \cos\theta & 0 \\\\ 0 & 0 & 1 \end{bmatrix} \times \left[\begin{array}{c} x \\\\ y \\\\ z \end{array}\right]$$
     
-    Applying the rotation,
+    $$P_r=\begin{bmatrix} x\cos\theta-y\sin\theta \\\\
+        x\sin\theta+y\cos\theta \\\\
+        z \end{bmatrix}$$
 
-    |![Psi 0 degree](./img/3d_bounding_box_psi_0.png)|![Psi 45 degree](./img/3d_bounding_box_psi_0.png)|
+    The translation matrix is,
+
+    $$T=\begin{bmatrix} 1 & 0 & 0 & x \\\\ 0 & 1 & 0 & y \\\\ 0 & 0 & 1 & z \\\\ 0 & 0 & 0 & 1 \end{bmatrix}$$
+    
+    Applying the rotation and translation for each corner, $\displaystyle P'=T\times R_z \times P$,
+
+    |<img src="./img/3d_bounding_box_psi_45.png" alt="Psi 45 degree" height=300 width=300>|<img src="./img/3d_bounding_box_psi_0.png" alt="Psi 0 degree" height=300 width=300>|
     |-|-|
-    |*Show bounding box when $\Psi=0^\circ$*|*Show bounding box when $\Psi=45^\circ$*|
+    |*Show bounding box when $\Psi=45^\circ$*|*Show bounding box when $\Psi=0^\circ$*|
 
 - (c) Two 2D bounding boxes $\textstyle B_1\; and\; B_2$ are defined as:
 
