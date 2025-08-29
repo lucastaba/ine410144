@@ -13,9 +13,9 @@
 
     The area of the bounding box is,
 
-    ```math
+    $$
     box_{area}=(x_{max}-x_{min})\times(y_{max}-y_{min})
-    ```
+    $$
 
     Then,
 
