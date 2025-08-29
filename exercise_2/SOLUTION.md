@@ -30,33 +30,25 @@
 
 - (b) If the bounding box in (a) is rotated by $\displaystyle \Psi=45^\circ$, sketch (or describe) how the occupied space differs compared to $\displaystyle \Psi=0^\circ$.
 
-    To plot the a 2D version of the bounding box, we need at least four points. From the object perspective, we can easily find,
-
-    $$A=(-\frac{l}{2},-\frac{l}{2})$$
-
-    The heading $\displaystyle \Psi$ is the measured angle of object local reference relative to the global origin coordinate $\textstyle X\!-\!axis$, using the right hand rule. Which means that the rotation will be along the $\textstyle Z\!-\!axis$. The Z rotation matrix is given by:
+    The heading $\displaystyle \Psi$ is the measured angle of object local reference relative to the global origin coordinate $\textstyle X-axis$, using the right hand rule. Which means that the rotation will be along the $\textstyle Z-axis$. The Z rotation matrix is given by:
 
     $$R_z(\theta)=\begin{bmatrix}
-        \cos\theta & -\sin\theta & 0 \\\\
-        \sin\theta & \cos\theta & 0 \\\\
-        0 & 0 & 1
-    \end{bmatrix}$$
+        \cos\theta & -\sin\theta & 0 \\\\ \sin\theta & \cos\theta & 0 \\\\ 0 & 0 & 1\end{bmatrix}$$
 
-    Assuming the initial object direction is in $\textstyle X\!-\!axis$, we can define a vector unit vector,
+    Assuming the initial object direction is in $\textstyle X-axis$, we can write,
 
-    $$P=\left[\begin{array}{c} x \\ y \\ z \end{array}\right]$$
+    $$P=\left[\begin{array}{c} x \\\\ y \\\\ z \end{array}\right]$$
 
     The rotation is,
 
-    $$v'=R_z(\theta) \times v=\begin{bmatrix}
-        \cos\theta & -\sin\theta & 0 \\\\
-        \sin\theta & \cos\theta & 0 \\\\
-        0 & 0 & 1
-    \end{bmatrix} \times \left[\begin{array}{c} 1 \\ 0 \\ 0 \end{array}\right]$$
+    $$P_r=R_z(\theta) \times P=\begin{bmatrix}
+        \cos\theta & -\sin\theta & 0 \\\\ \sin\theta & \cos\theta & 0 \\\\ 0 & 0 & 1 \end{bmatrix} \times \left[\begin{array}{c} x \\\\ y \\\\ z \end{array}\right]$$
+    
+    Applying the rotation,
 
-    Solving the multiplication,
-
-    $$v'=\left[\begin{array}{c} \cos\theta \\ \sin\theta \\ 0 \end{array}\right]$$
+    |![Psi 0 degree](./img/3d_bounding_box_psi_0.png)|![Psi 45 degree](./img/3d_bounding_box_psi_0.png)|
+    |-|-|
+    |*Show bounding box when $\Psi=0^\circ$*|*Show bounding box when $\Psi=45^\circ$*|
 
 - (c) Two 2D bounding boxes $\textstyle B_1\; and\; B_2$ are defined as:
 
