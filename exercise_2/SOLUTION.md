@@ -13,9 +13,7 @@
 
     The area of the bounding box is,
 
-    ```math
-    box_{area}=(x_{max}-x_{min})\times(y_{max}-y_{min})
-    ```
+    $$box_{area}=(x_{max}-x_{min})\times(y_{max}-y_{min})$$
 
     Then,
 
@@ -82,3 +80,8 @@
     B_1:(x_{min},y_{min},x_{max},y_{max})=(0,0,4,3),\; B_2:(2,1,6,5).
     ```
     Compute their intersection-over-union (IoU).
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>
