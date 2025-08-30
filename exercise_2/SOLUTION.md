@@ -87,6 +87,29 @@
 
     $$IoU=\frac{A(B1\cap B2)}{A(B1 \cup B2)} = \frac{4}{24}= \frac{1}{6} \approx 0.1666$$
 
+3. **Confidence and Uncertainty**
+- A detector outputs a bicycle at 0.65 confidence. Discuss whether this uncertainty is more likely to be aleatoric or epistemic in the following scenarios:
+
+  - (a) The bicycle is partially hidden behind a bus.
+
+    This is more likely to be *aleatoric*. The bicycle is only partially observable by the detector.
+
+  - (b) The detector was trained mostly on car and pedestrian classes, with few examples of bicycles.
+
+    This is more likely to be *epistemic*. The detector need a better dataset with more classes for bicycles.
+
+- A detector identifies a pedestrian at 0.85 confidence under foggy conditions. Which type of uncertainty (aleatoric or epistemic) is dominant, and why?
+
+    The dominant uncertainty is *aleatoric*. The foggy condition is a environmental effect. Note that in such adverse condition, this high 0.85 confidence could be a false positive.
+
+- An object is detected at 0.40 confidence. Suggest two possible ways to reduce epistemic uncertainty for this case.
+
+    Increase the dataset for this specific scenario by collecting more data under similar condition. And create more scenarios, to increase detection confidence in new-but-similar scenarios where the detector will have good confidence even in cases it never saw, but was trained in a dataset with similar scenario.
+
+- Suppose the detector assigns high confidence (0.95) to a phantom detection caused by sensor reflection. Discuss why confidence alone may be misleading in safety-critical contexts.
+
+    This is a false positive case where the detector sees something that is not there. Confidence is the indicator on how confident the detector is about its detection. Factors such as bad bounding box selection, lack of training data, faulty sensors, etc, can trick the detector into wrong classifications.
+
 ## Reference
 [[1]](https://geogebra.org). Images generated using the online tool available in https://geogebra.org.
 
