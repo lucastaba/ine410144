@@ -110,6 +110,22 @@
 
     This is a false positive case where the detector sees something that is not there. Confidence is the indicator on how confident the detector is about its detection. Factors such as bad bounding box selection, lack of training data, faulty sensors, etc, can trick the detector into wrong classifications.
 
+4. **Coordinate Transformation**
+- An object is observed in the local frame of vehicle $O_1$ at position $(px, py) = (10,5)$ m.
+- The origin of $O_2$ is 4m east and 3m north of $O_1$.
+- Compute the position of the object relative to $O_2$ assuming both vehicles use ENU coordinates.
+
+    Given the $Object$ and origins $O_1$ and $O_2$, depicted bellow,
+
+    ![o1_o2_object](./img/o1_o2.png)
+
+    The position $P'$ of the objective relative to $O_2$ is,
+
+    $$P'=(x_{obj}-x_{O_2},y_{obj}-y_{O_2})=(10-4,5-3)$$
+    $$P'=(6,2)$$
+
+- An observer $O_3$ detects and object at $(p_x,p_y)=(15,-3)$ m. Observer $O_4$ is located 10 m east and 2 m north of $O_3$. Express the object's coordinates in $O_4$'s frame.
+
 ## Reference
 [[1]](https://geogebra.org). Images generated using the online tool available in https://geogebra.org.
 
