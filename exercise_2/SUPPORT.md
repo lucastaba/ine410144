@@ -17,3 +17,4 @@
 |GNSS|Global Navigation Satellite System|
 |WGS|World Geodetic System|
 |UTM|Universal Transverse Mercator|
+|IoU|Intersection over Union|

@@ -64,6 +64,15 @@
 
     Compute their intersection-over-union (IoU).
 
+    Given the two bounding boxes depicted in the image bellow, we will calculate the $\displaystyle A(B1\cap B2)$ first,
+
+    ![bounding box plot](./img/iou.png)
+
+    
+
+## Reference
+[[1]](https://geogebra.org). Images generated using the online tool available in https://geogebra.org.
+
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
