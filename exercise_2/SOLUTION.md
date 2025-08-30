@@ -68,7 +68,24 @@
 
     ![bounding box plot](./img/iou.png)
 
-    
+    The intersection are, denoted by $\displaystyle A(B1\cap B2)$ can be calculated as,
+
+    $$A(B1\cap B2)=(b1_{x_{max}}-b2_{x_{min}}) \times (b1_{y_{max}}-b2_{y_{min}})$$
+
+    $$A(B1\cap B2)=(4-2) \times (3-1)=4$$
+
+    The area for each bounding box is,
+
+    $$A(B1)=4 \times 3 = 12,\\ A(B2)=(5-1) \times (6-2)=4 \times 4 = 16$$
+
+    The area of the union,
+
+    $$A(B1 \cup B2)=A(B1)+A(B2)-A(B1\cap B2) \\\\
+    A(B1 \cup B2)=12+16-4=24$$
+
+    Finally, we can calculate the $IoU$,
+
+    $$IoU=\frac{A(B1\cap B2)}{A(B1 \cup B2)} = \frac{4}{24}= \frac{1}{6} \approx 0.1666$$
 
 ## Reference
 [[1]](https://geogebra.org). Images generated using the online tool available in https://geogebra.org.
