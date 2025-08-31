@@ -244,11 +244,11 @@
     Given a $\dot{\Psi}=0$, the CTRV model fallback to a CV model, thus, we cal calculate the car position using,
 
     $$
-    x_{k+1}=x_k+v\cos{(\Psi)\Delta t}
+    x_{k+1}=x_k+v\cos\Psi\Delta t
     $$
 
     $$
-    y_{k+1}=y_k+v\sin{(\Psi)\Delta t}
+    y_{k+1}=y_k+v\sin\Psi\Delta t
     $$
 
     Substituting the values into the equations,
@@ -256,11 +256,43 @@
     $$
     P=
     \begin{bmatrix}
-        0+20\cos{(30^\circ)}\times 2\\\\
-        0+20\sin{(30^\circ)}\times 2
+        0+20\cos30^\circ\times 2\\\\
+        0+20\sin30^\circ\times 2
     \end{bmatrix}^T=
-    (17.32,10)m
+    (34.64,20)m
     $$
+
+6. **Comparing Motion Models**
+- Using the same initial conditions as Exercise 5, describe qualitatively how the predicted position would differ if the CTRA model were used with a longitudinal acceleration of $a=2m/s²$.
+
+    The CTRA model takes a motion vector $x_k=\left[p_x,p_y,v,\Psi,\dot{\Psi},a\right]^T$, substituting the values, $x_k=\left[0,0,20,30^\circ,0,2\right]^T$.
+
+    Same as the Exercise 5, there is a discontinuity when $\dot{\Psi}=0$, thus, the CTRA model becomes,
+
+    $$
+    x_{k+1}=x_k+\left[\left(v\Delta t+\frac{at²}{2}\right)\cos\Psi\right]
+    $$
+
+    $$
+    y_{k+1}=y_k+\left[\left(v\Delta t+\frac{at²}{2}\right)\sin\Psi\right]
+    $$
+
+    Substituting the values,
+
+    $$
+    P=
+    \begin{bmatrix}
+    0+\left[\left(20\times 2+\frac{2\times 2²}{2}\right)\cos30^\circ\right]\\\\
+    0+\left[\left(20\times 2+\frac{2\times 2²}{2}\right)\sin30^\circ\right]
+    \end{bmatrix}^T=
+    (38.01,22)m
+    $$
+
+    As the CTRV model does not take in consideration the longitudinal acceleration, the final position can be considerably different after some time.
+
+- Likewise, compare with the CV model.
+
+    As noticed on Exercise 5, for this particular case where the $\dot{\Psi}=0$, the observations made on the CTRA are the same for the CV. For a value of $\dot{\Psi}\neq 0$, the difference between CTRA and CV final positions would be much higher.
 
 ## Reference
 [[1]](https://geogebra.org). Images generated using the online tool available in https://geogebra.org.
