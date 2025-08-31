@@ -119,12 +119,117 @@
 
     ![o1_o2_object](./img/o1_o2.png)
 
-    The position $P'$ of the objective relative to $O_2$ is,
+    The position $P'$ of the object relative to $O_2$ is,
 
     $$P'=(x_{obj}-x_{O_2},y_{obj}-y_{O_2})=(10-4,5-3)$$
     $$P'=(6,2)$$
 
 - An observer $O_3$ detects and object at $(p_x,p_y)=(15,-3)$ m. Observer $O_4$ is located 10 m east and 2 m north of $O_3$. Express the object's coordinates in $O_4$'s frame.
+
+    Given the $Object$ and origins $O_3$ and $O_4$, depicted bellow,
+
+    ![o3_o4_object](./img/o3_o4.png)
+
+    The transformation matrix $T_{O_3 \to O_4}$ is,
+
+    $$
+    T_{O_3 \to O_4}= \begin{bmatrix}
+        1 & 0 & -10\\\\
+        0 & 1 & -2\\\\
+        0 & 0 & 1
+    \end{bmatrix}
+    $$
+
+    The position $P'$ of the object relative to $O_4$' frame is,
+
+    $$P'=T_{O_3 \to O_4}(P)=T_{O_3 \to O_4} \times P$$
+    $$P'= \begin{bmatrix}
+        1 & 0 & -10\\\\
+        0 & 1 & -2\\\\
+        0 & 0 & 1
+    \end{bmatrix} \times
+    \begin{bmatrix}
+    15\\\\
+    -3\\\\
+    1
+    \end{bmatrix}=(5,-5)$$
+
+    Note: The position should be augmented by 1 row.
+
+- Generalize the previous problem by deriving the transformation matrix $T_{O_3 \to O_4}$ for arbitrary displacements $(\Delta x, \Delta y)$ between observers.
+
+    The transformation matrix $T_{O_3 \to O_4}$ can be expressed as,
+
+    $$T'_{O_3 \to O_4}=\begin{bmatrix} 1&0&(-10+\Delta x)\\\\0&1&(-2+\Delta y)\\\\0&0&1 \end{bmatrix}$$
+
+- If observer $O_4$ is additionally rotated by $30^\circ$ with respect to $O_3$, update the transformation and compute the new object coordinates.
+
+    To better visualize the rotation, the can imagine the points rotating around a imaginary $Z-axis$. Given the 3D rotation transformation matrix for the $Z-axis$,
+
+    $$R_z(\theta)=R(\theta)=\begin{bmatrix}
+        \cos\theta & -\sin\theta & 0\\\\
+        \sin\theta & \cos\theta & 0\\\\
+        0 & 0 & 1
+    \end{bmatrix}$$
+
+    The updated transformation to transform a object in $O_3$'s coordinate to $O_4$ coordinate, must first rotate the $O_4$ then apply the transformation,
+
+    $$
+    O'_4=R(\theta)\times O_4=
+    \begin{bmatrix}
+        \cos\theta & -\sin\theta & 0\\\\
+        \sin\theta & \cos\theta & 0\\\\
+        0 & 0 & 1
+    \end{bmatrix} \times
+    \begin{bmatrix}
+    10\\\\
+    2\\\\
+    1
+    \end{bmatrix}=
+    \begin{bmatrix}
+        10\cos\theta-2\sin\theta\\\\
+        10\sin\theta+2\cos\theta\\\\
+        1
+    \end{bmatrix}
+    $$
+
+    $$
+    T_{O_3 \to O'_4}=
+    \begin{bmatrix}
+        1 & 0 & -(10\cos\theta-2\sin\theta)\\\\
+        0 & 1 & -(10\sin\theta+2\cos\theta)\\\\
+        0 & 0 & 1
+    \end{bmatrix}
+    $$
+
+    Applying the transformation $T_{O_3 \to O'_4}$ to $(px,py)=(15,-3)$ and making $\theta=30^\circ$,
+
+    $$
+    P''=T_{O_3 \to O'_4}(15,-3)=
+    \begin{bmatrix}
+        1 & 0 & -(10\cos30^\circ-2\sin30^\circ)\\\\
+        0 & 1 & -(10\sin30^\circ+2\cos30^\circ)\\\\
+        0 & 0 & 1
+    \end{bmatrix} \times
+    \begin{bmatrix}
+        15\\\\
+        -3\\\\
+        1
+    \end{bmatrix}=
+    \begin{bmatrix}
+        15-(10\cos30^\circ-2\sin30^\circ)\\\\
+        -3-(10\sin30^\circ+2\cos30^\circ)\\\\
+        1
+    \end{bmatrix}
+    $$
+
+    Thus, the position of the object relative to $O'_4$, depicted on the image, is,
+
+    $$
+    P''\approx(7.34,-9.73)
+    $$
+
+    ![o3_o'_4](./img/o3_04_30.png)
 
 ## Reference
 [[1]](https://geogebra.org). Images generated using the online tool available in https://geogebra.org.
