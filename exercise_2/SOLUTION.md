@@ -231,6 +231,37 @@
 
     ![o3_o'_4](./img/o3_04_30.png)
 
+5. **Motion Vector Propagation**
+- A car modeled with the CTRV state vector:
+    
+    $$
+    x_k=\left[p_x,p_y,v,\Psi,\dot{\Psi}\right]=[0,0,20,30^\circ,0]
+    $$
+
+    where speed is 20m/s, heading $30^\circ$ and yaw rate 0.
+- Compute is position after $\Delta t=2$s.
+
+    Given a $\dot{\Psi}=0$, the CTRV model fallback to a CV model, thus, we cal calculate the car position using,
+
+    $$
+    x_{k+1}=x_k+v\cos{(\Psi)\Delta t}
+    $$
+
+    $$
+    y_{k+1}=y_k+v\sin{(\Psi)\Delta t}
+    $$
+
+    Substituting the values into the equations,
+
+    $$
+    P=
+    \begin{bmatrix}
+        0+20\cos{(30^\circ)}\times 2\\\\
+        0+20\sin{(30^\circ)}\times 2
+    \end{bmatrix}^T=
+    (17.32,10)m
+    $$
+
 ## Reference
 [[1]](https://geogebra.org). Images generated using the online tool available in https://geogebra.org.
 
