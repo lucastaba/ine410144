@@ -5,7 +5,7 @@
 1. **Bounding Box Definition**
 - Given a 2D bounding box defined by $\displaystyle (x_{min},y_{min},x_{max},y_{max}) = (2,3,6,8)$, list all four corner coordinates.
 
-    The bounding box corner will be given by $\displaystyle p_1=(2,3),\;p_2=(2,8),\;p_3=(6,8)\; {\textstyle and}\; p_4=(6,3)$.
+    The bounding box corner will be given by $\displaystyle p_1=(2,3),p_2=(2,8),p_3=(6,8) {\textstyle and} p_4=(6,3)$.
 
     ![Bounding box](./img/bounding_box.png)
 
@@ -58,9 +58,9 @@
     |-|-|
     |*Show bounding box when $\Psi=45^\circ$*|*Show bounding box when $\Psi=0^\circ$*|
 
-- (c) Two 2D bounding boxes $\textstyle B_1\; and\; B_2$ are defined as:
+- (c) Two 2D bounding boxes $\textstyle B_1 and B_2$ are defined as:
 
-    $$B_1:(x_{min},y_{min},x_{max},y_{max})=(0,0,4,3),\; B_2:(2,1,6,5).$$
+    $$B_1:(x_{min},y_{min},x_{max},y_{max})=(0,0,4,3), B_2:(2,1,6,5).$$
 
     Compute their intersection-over-union (IoU).
 
