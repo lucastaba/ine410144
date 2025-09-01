@@ -294,8 +294,28 @@
 
     As noticed on Exercise 5, for this particular case where the $\dot{\Psi}=0$, the observations made on the CTRA are the same for the CV. For a value of $\dot{\Psi}\neq 0$, the difference between CTRA and CV final positions would be much higher.
 
+7. **Geopositioning and GNSS**
+- A vehicle reports its position as $(lat,lon)=(52.5200^\circ N, 12.4050^\circ E)$ is WGS84. Explain how this can be approximated as a Cartesian coordinate in UTM.
+
+    The geodetic system can be represented onto a cartesian coordinate using the transverse mercator projection which "are formed by placing a cylinder in contact with a line of equal longitude also called a meridian (Figure 3) and projecting the earth’s surface onto it."[[2]] The projection will have some distortions, however, it is minimized by the division of the earth's projection into 60 zones of $6^\circ$ each.
+
+- Two vehicles measure positions using GNSS, but both suffer from a 2m random error. Discuss the implications of this error when: (i) estimating absolute global positions, and (ii) estimating relative distance between the two vehicles when they are only 5m apart.
+
+    For both cases, the GNSS adds some imprecision, due to conversions using geodetic systems. For (i), this error could lead to erroneous positioning that would impact a precise driving or maneuver, e.g. change road lanes, park, overtaking, etc. In (ii), if the vehicles rely only in the GNSS measurements, this could lead to accidents, e.g. vehicles stay in the same lane thinking they are 4m apart (assuming the error of both vehicles).
+
+- A CAV network chooses to exchange relative Cartesian coordinates instead of geodetic coordinates. Justify this design in terms of uncertainty and computational cost.
+
+    That are several reasons to choose Cartesian coordinate over GNSS:
+    1. The GNNS has a slow rate of data transmission, that would be reasonable for long range distance traveling, where the position update rate can be slower, but for relative movement in close space requires a hight update rate;
+    2. The GNSS coordinate system is not optimal for kinematic calculation, yielding slower computation as compared to cartesian coordinates.
+    3. Continuously converting position between GNSS coordinate system and cartesian could lead to a build up of uncertainty.
+
 ## Reference
-[[1]](https://geogebra.org). Images generated using the online tool available in https://geogebra.org.
+[1]: https://geogebra.org
+[2]: https://www.ccgalberta.com/ccgresources/report11/2009-410_converting_latlon_to_utm.pdf
+
+[[1]] : https://geogebra.org  
+[[2]] : https://www.ccgalberta.com/ccgresources/report11/2009-410_converting_latlon_to_utm.pdf
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">
