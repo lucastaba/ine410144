@@ -306,9 +306,14 @@
 - A CAV network chooses to exchange relative Cartesian coordinates instead of geodetic coordinates. Justify this design in terms of uncertainty and computational cost.
 
     That are several reasons to choose Cartesian coordinate over GNSS:
-    1. The GNNS has a slow rate of data transmission, that would be reasonable for long range distance traveling, where the position update rate can be slower, but for relative movement in close space requires a hight update rate;
+    1. The GNSS has a slow rate of data transmission, that would be reasonable for long range distance traveling, where the position update rate can be slower, but for relative movement in close space requires a hight update rate;
     2. The GNSS coordinate system is not optimal for kinematic calculation, yielding slower computation as compared to cartesian coordinates.
     3. Continuously converting position between GNSS coordinate system and cartesian could lead to a build up of uncertainty.
+   
+8. **Time derivatives in rotation reference frames**
+- Consider a scenario in which an autonomous vehicle has an IMU mounted at its center of rotation. Derive a differential equation that relates the measurements of the IMU, expressed in the vehicle’s body frame, to the longitudinal acceleration of the vehicle.
+
+
 
 ## Reference
 [1]: https://geogebra.org
