@@ -1,0 +1,1402 @@
+{
+    "id": "8c9f3e25c83dba4d19f59380f110667c6676b8e2",
+    "description": "SDAV-CARLA@v0",
+    "components": [],
+    "weatherElements": [
+        {
+            "kind": "SUNLIGHT",
+            "comment": "Carla (-90 to +90)",
+            "intensity": {
+                "unit": 3300018468,
+                "valueF32": 0.2617993877991494
+            }
+        },
+        {
+            "kind": "FOG",
+            "comment": "",
+            "intensity": {
+                "unit": 4160749569,
+                "valueF32": 0.0
+            },
+            "viewDistance": {
+                "unit": 3298183460,
+                "valueF32": 0.0
+            },
+            "fallOff": {
+                "unit": 3297167652,
+                "valueF32": 0.0
+            }
+        },
+        {
+            "kind": "WIND",
+            "comment": "",
+            "intensity": 0.0
+        },
+        {
+            "kind": "RAIN",
+            "comment": "",
+            "intensity": 0.0
+        },
+        {
+            "kind": "WETNESS",
+            "comment": "",
+            "intensity": 0.0
+        }
+    ],
+    "vehicles": [
+        {
+            "id": 120,
+            "model": "vehicle.lincoln.mkz_2017",
+            "body": {
+                "color_rgb": "Color(16,16,16,255)",
+                "extents": {
+                    "x": {
+                        "unit": 3298183460,
+                        "valueF32": 2.4508416652679443
+                    },
+                    "y": {
+                        "unit": 3298183460,
+                        "valueF32": 1.0641621351242065
+                    },
+                    "z": {
+                        "unit": 3298183460,
+                        "valueF32": 0.7553732395172119
+                    }
+                },
+                "mass": {
+                    "unit": 3297954084,
+                    "valueF32": 1696.0
+                },
+                "centerOfMass": {
+                    "x": {
+                        "unit": 3298183460,
+                        "valueF32": 0.5999999642372131
+                    },
+                    "y": {
+                        "unit": 3298183460,
+                        "valueF32": 0.0
+                    },
+                    "z": {
+                        "unit": 3298183460,
+                        "valueF32": -0.29999998211860657
+                    }
+                },
+                "dragCoefficient": {
+                    "unit": 3298208036,
+                    "valueF32": 0.30000001192092896
+                },
+                "doorCount": 5,
+                "fuelTankCapacity": {
+                    "unit": 3298707748,
+                    "valueF32": -1
+                },
+                "wheelBase": {
+                    "unit": 0,
+                    "valueF32": -1
+                },
+                "frontAxleWidth": {
+                    "unit": 0,
+                    "valueF32": -1
+                },
+                "rearAxleWidth": {
+                    "unit": 0,
+                    "valueF32": -1
+                }
+            },
+            "engine": {
+                "features": {
+                    "model": "",
+                    "manufacturer": "",
+                    "type": "COMBUSTION",
+                    "fuel": [
+                        "GASOLINE"
+                    ],
+                    "details": "",
+                    "valveCount": 0,
+                    "cylinderCount": 0
+                },
+                "torqueCurve": [
+                    {
+                        "rpm": {
+                            "unit": 3297917220,
+                            "valueF32": 16.666666666666668
+                        },
+                        "torque": {
+                            "unit": 3298470180,
+                            "valueF32": 347.0
+                        }
+                    },
+                    {
+                        "rpm": {
+                            "unit": 3297917220,
+                            "valueF32": 25.0
+                        },
+                        "torque": {
+                            "unit": 3298470180,
+                            "valueF32": 523.0
+                        }
+                    },
+                    {
+                        "rpm": {
+                            "unit": 3297917220,
+                            "valueF32": 33.333333333333336
+                        },
+                        "torque": {
+                            "unit": 3298470180,
+                            "valueF32": 606.0
+                        }
+                    },
+                    {
+                        "rpm": {
+                            "unit": 3297917220,
+                            "valueF32": 50.0
+                        },
+                        "torque": {
+                            "unit": 3298470180,
+                            "valueF32": 695.0
+                        }
+                    },
+                    {
+                        "rpm": {
+                            "unit": 3297917220,
+                            "valueF32": 66.66666666666667
+                        },
+                        "torque": {
+                            "unit": 3298470180,
+                            "valueF32": 677.0
+                        }
+                    },
+                    {
+                        "rpm": {
+                            "unit": 3297917220,
+                            "valueF32": 88.33333333333333
+                        },
+                        "torque": {
+                            "unit": 3298470180,
+                            "valueF32": 607.0
+                        }
+                    },
+                    {
+                        "rpm": {
+                            "unit": 3297917220,
+                            "valueF32": 108.33333333333333
+                        },
+                        "torque": {
+                            "unit": 3298470180,
+                            "valueF32": 466.0
+                        }
+                    }
+                ],
+                "maxRPM": {
+                    "unit": 3297917220,
+                    "valueF32": 6500.0
+                },
+                "moi": {
+                    "unit": 3298482468,
+                    "valueF32": 1.0
+                },
+                "damping": {
+                    "fullThrottle": {
+                        "unit": 3297949988,
+                        "valueF32": 0.05000000074505806
+                    },
+                    "zeroThrottleCluthEngaged": {
+                        "unit": 3297949988,
+                        "valueF32": 2.0
+                    },
+                    "zeroThrottleClutchDisengaged": {
+                        "unit": 3297949988,
+                        "valueF32": 0.3499999940395355
+                    }
+                },
+                "position": "FRONT",
+                "power": {
+                    "eletricPower": {
+                        "unit": 0,
+                        "valueF32": 0.0
+                    },
+                    "combustionPower": {
+                        "unit": 0,
+                        "valueF32": 0.0
+                    },
+                    "totalSystemPower": {
+                        "unit": 0,
+                        "valueF32": 0.0
+                    }
+                },
+                "torque": {
+                    "eletricTorque": {
+                        "unit": 0,
+                        "valueF32": 0.0
+                    },
+                    "combustionTorque": {
+                        "unit": 0,
+                        "valueF32": 0.0
+                    },
+                    "totalSystemTorque": {
+                        "unit": 0,
+                        "valueF32": 0.0
+                    }
+                },
+                "fuelConsumption": {
+                    "unit": 0,
+                    "valueF32": 0.0
+                },
+                "co2Emission": {
+                    "unit": 0,
+                    "valueF32": 0.0
+                },
+                "emissionStandard": ""
+            },
+            "transmission": {
+                "type": "AUTOMATIC",
+                "switchTime": {
+                    "unit": 3297925412,
+                    "valueF32": 0.10000000149011612
+                },
+                "clutchStrength": {
+                    "unit": 3298474276,
+                    "valueF32": 10.0
+                },
+                "finalRatio": {
+                    "unit": 4160749568,
+                    "valueF32": 3.2100000381469727
+                },
+                "forwardGears": [
+                    {
+                        "ratio": {
+                            "unit": 4160749568,
+                            "valueF32": 4.584000110626221
+                        },
+                        "downRation": {
+                            "unit": 4160749568,
+                            "valueF32": 0.23000000417232513
+                        },
+                        "upRatio": {
+                            "unit": 4160749568,
+                            "valueF32": 0.5400000214576721
+                        }
+                    },
+                    {
+                        "ratio": {
+                            "unit": 4160749568,
+                            "valueF32": 2.9639999866485596
+                        },
+                        "downRation": {
+                            "unit": 4160749568,
+                            "valueF32": 0.23000000417232513
+                        },
+                        "upRatio": {
+                            "unit": 4160749568,
+                            "valueF32": 0.5
+                        }
+                    },
+                    {
+                        "ratio": {
+                            "unit": 4160749568,
+                            "valueF32": 1.9119999408721924
+                        },
+                        "downRation": {
+                            "unit": 4160749568,
+                            "valueF32": 0.23000000417232513
+                        },
+                        "upRatio": {
+                            "unit": 4160749568,
+                            "valueF32": 0.46000000834465027
+                        }
+                    },
+                    {
+                        "ratio": {
+                            "unit": 4160749568,
+                            "valueF32": 1.4459999799728394
+                        },
+                        "downRation": {
+                            "unit": 4160749568,
+                            "valueF32": 0.23000000417232513
+                        },
+                        "upRatio": {
+                            "unit": 4160749568,
+                            "valueF32": 0.46000000834465027
+                        }
+                    },
+                    {
+                        "ratio": {
+                            "unit": 4160749568,
+                            "valueF32": 1.0
+                        },
+                        "downRation": {
+                            "unit": 4160749568,
+                            "valueF32": 0.23000000417232513
+                        },
+                        "upRatio": {
+                            "unit": 4160749568,
+                            "valueF32": 0.46000000834465027
+                        }
+                    },
+                    {
+                        "ratio": {
+                            "unit": 4160749568,
+                            "valueF32": 0.7459999918937683
+                        },
+                        "downRation": {
+                            "unit": 4160749568,
+                            "valueF32": 0.23000000417232513
+                        },
+                        "upRatio": {
+                            "unit": 4160749568,
+                            "valueF32": 0.46000000834465027
+                        }
+                    }
+                ],
+                "driveTrain": "FRONT",
+                "gears": 6
+            },
+            "steering": {
+                "type": "ASSISTED_ELETRIC",
+                "steeringCurve": [
+                    {
+                        "speed": {
+                            "unit": 3298212132,
+                            "valueF32": 0.0
+                        },
+                        "maximumSteering": {
+                            "unit": 4160749569,
+                            "valueF32": 1.0
+                        }
+                    },
+                    {
+                        "speed": {
+                            "unit": 3298212132,
+                            "valueF32": 5.555555555555555
+                        },
+                        "maximumSteering": {
+                            "unit": 4160749569,
+                            "valueF32": 0.8999999761581421
+                        }
+                    },
+                    {
+                        "speed": {
+                            "unit": 3298212132,
+                            "valueF32": 16.666666666666668
+                        },
+                        "maximumSteering": {
+                            "unit": 4160749569,
+                            "valueF32": 0.800000011920929
+                        }
+                    },
+                    {
+                        "speed": {
+                            "unit": 3298212132,
+                            "valueF32": 33.333333333333336
+                        },
+                        "maximumSteering": {
+                            "unit": 4160749569,
+                            "valueF32": 0.699999988079071
+                        }
+                    }
+                ]
+            },
+            "wheels": [
+                {
+                    "position": {
+                        "profile": "FRONT_LEFT",
+                        "location": {
+                            "x": {
+                                "unit": 3298183460,
+                                "valueF32": 34905.046875
+                            },
+                            "y": {
+                                "unit": 3298183460,
+                                "valueF32": -16256.3818359375
+                            },
+                            "z": {
+                                "unit": 3298183460,
+                                "valueF32": 80.19767761230469
+                            }
+                        }
+                    },
+                    "friction": {
+                        "unit": 3298208036,
+                        "valueF32": 3.5
+                    },
+                    "damping": {
+                        "unit": 3298466084,
+                        "valueF32": 0.25
+                    },
+                    "maxSteerAngle": {
+                        "unit": 3300018468,
+                        "valueF32": 1.2217303432379762
+                    },
+                    "radius": {
+                        "unit": 3298183460,
+                        "valueF32": 0.355
+                    },
+                    "width": {
+                        "unit": 3298183460,
+                        "valueF32": -1
+                    },
+                    "brake": {
+                        "maxBrakeTorque": {
+                            "unit": 3298470180,
+                            "valueF32": 800.0
+                        },
+                        "maxHandbreakTorque": {
+                            "unit": 3298470180,
+                            "valueF32": 0.0
+                        },
+                        "type": ""
+                    },
+                    "sideWallHeight": {
+                        "unit": 434343,
+                        "valueF32": -1
+                    },
+                    "revolutions": {
+                        "unit": 434343,
+                        "valueF32": -1
+                    },
+                    "lateralStiffnessMaxLoad": {
+                        "unit": 3295856932,
+                        "valueF32": 3.0
+                    },
+                    "lateralStiffnessValue": {
+                        "unit": 3295856932,
+                        "valueF32": 20.0
+                    },
+                    "longitudinalStiffnessValue": {
+                        "unit": 3295856932,
+                        "valueF32": 3000.0
+                    }
+                },
+                {
+                    "position": {
+                        "profile": "FRONT_LEFT",
+                        "location": {
+                            "x": {
+                                "unit": 3298183460,
+                                "valueF32": 34748.09375
+                            },
+                            "y": {
+                                "unit": 3298183460,
+                                "valueF32": -16258.4951171875
+                            },
+                            "z": {
+                                "unit": 3298183460,
+                                "valueF32": 80.19767761230469
+                            }
+                        }
+                    },
+                    "friction": {
+                        "unit": 3298208036,
+                        "valueF32": 3.5
+                    },
+                    "damping": {
+                        "unit": 3298466084,
+                        "valueF32": 0.25
+                    },
+                    "maxSteerAngle": {
+                        "unit": 3300018468,
+                        "valueF32": 1.2217303432379762
+                    },
+                    "radius": {
+                        "unit": 3298183460,
+                        "valueF32": 0.355
+                    },
+                    "width": {
+                        "unit": 3298183460,
+                        "valueF32": -1
+                    },
+                    "brake": {
+                        "maxBrakeTorque": {
+                            "unit": 3298470180,
+                            "valueF32": 800.0
+                        },
+                        "maxHandbreakTorque": {
+                            "unit": 3298470180,
+                            "valueF32": 0.0
+                        },
+                        "type": ""
+                    },
+                    "sideWallHeight": {
+                        "unit": 434343,
+                        "valueF32": -1
+                    },
+                    "revolutions": {
+                        "unit": 434343,
+                        "valueF32": -1
+                    },
+                    "lateralStiffnessMaxLoad": {
+                        "unit": 3295856932,
+                        "valueF32": 3.0
+                    },
+                    "lateralStiffnessValue": {
+                        "unit": 3295856932,
+                        "valueF32": 20.0
+                    },
+                    "longitudinalStiffnessValue": {
+                        "unit": 3295856932,
+                        "valueF32": 3000.0
+                    }
+                },
+                {
+                    "position": {
+                        "profile": "FRONT_LEFT",
+                        "location": {
+                            "x": {
+                                "unit": 3298183460,
+                                "valueF32": 34908.9140625
+                            },
+                            "y": {
+                                "unit": 3298183460,
+                                "valueF32": -16543.46875
+                            },
+                            "z": {
+                                "unit": 3298183460,
+                                "valueF32": 80.19767761230469
+                            }
+                        }
+                    },
+                    "friction": {
+                        "unit": 3298208036,
+                        "valueF32": 3.5
+                    },
+                    "damping": {
+                        "unit": 3298466084,
+                        "valueF32": 0.25
+                    },
+                    "maxSteerAngle": {
+                        "unit": 3300018468,
+                        "valueF32": 0.0
+                    },
+                    "radius": {
+                        "unit": 3298183460,
+                        "valueF32": 0.355
+                    },
+                    "width": {
+                        "unit": 3298183460,
+                        "valueF32": -1
+                    },
+                    "brake": {
+                        "maxBrakeTorque": {
+                            "unit": 3298470180,
+                            "valueF32": 800.0
+                        },
+                        "maxHandbreakTorque": {
+                            "unit": 3298470180,
+                            "valueF32": 1600.0
+                        },
+                        "type": ""
+                    },
+                    "sideWallHeight": {
+                        "unit": 434343,
+                        "valueF32": -1
+                    },
+                    "revolutions": {
+                        "unit": 434343,
+                        "valueF32": -1
+                    },
+                    "lateralStiffnessMaxLoad": {
+                        "unit": 3295856932,
+                        "valueF32": 3.0
+                    },
+                    "lateralStiffnessValue": {
+                        "unit": 3295856932,
+                        "valueF32": 20.0
+                    },
+                    "longitudinalStiffnessValue": {
+                        "unit": 3295856932,
+                        "valueF32": 3000.0
+                    }
+                },
+                {
+                    "position": {
+                        "profile": "FRONT_LEFT",
+                        "location": {
+                            "x": {
+                                "unit": 3298183460,
+                                "valueF32": 34751.95703125
+                            },
+                            "y": {
+                                "unit": 3298183460,
+                                "valueF32": -16545.58203125
+                            },
+                            "z": {
+                                "unit": 3298183460,
+                                "valueF32": 80.19767761230469
+                            }
+                        }
+                    },
+                    "friction": {
+                        "unit": 3298208036,
+                        "valueF32": 3.5
+                    },
+                    "damping": {
+                        "unit": 3298466084,
+                        "valueF32": 0.25
+                    },
+                    "maxSteerAngle": {
+                        "unit": 3300018468,
+                        "valueF32": 0.0
+                    },
+                    "radius": {
+                        "unit": 3298183460,
+                        "valueF32": 0.355
+                    },
+                    "width": {
+                        "unit": 3298183460,
+                        "valueF32": -1
+                    },
+                    "brake": {
+                        "maxBrakeTorque": {
+                            "unit": 3298470180,
+                            "valueF32": 800.0
+                        },
+                        "maxHandbreakTorque": {
+                            "unit": 3298470180,
+                            "valueF32": 1600.0
+                        },
+                        "type": ""
+                    },
+                    "sideWallHeight": {
+                        "unit": 434343,
+                        "valueF32": -1
+                    },
+                    "revolutions": {
+                        "unit": 434343,
+                        "valueF32": -1
+                    },
+                    "lateralStiffnessMaxLoad": {
+                        "unit": 3295856932,
+                        "valueF32": 3.0
+                    },
+                    "lateralStiffnessValue": {
+                        "unit": 3295856932,
+                        "valueF32": 20.0
+                    },
+                    "longitudinalStiffnessValue": {
+                        "unit": 3295856932,
+                        "valueF32": 3000.0
+                    }
+                }
+            ],
+            "sensors": [
+                {
+                    "kind": "IMU",
+                    "description": "",
+                    "model": "carla.sensor.other.imu",
+                    "firmware": "",
+                    "interferences": [],
+                    "readings": [
+                        {
+                            "measurement": "longitudinal",
+                            "domain": "sdav",
+                            "signature": 120,
+                            "dev": 0,
+                            "unit": 3298175268,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "t0": 1756410546786894,
+                            "tf": 1756410550186894,
+                            "version": "1.2"
+                        },
+                        {
+                            "measurement": "lateral",
+                            "domain": "sdav",
+                            "signature": 120,
+                            "dev": 1,
+                            "unit": 3298175268,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "t0": 1756410546786894,
+                            "tf": 1756410550186894,
+                            "version": "1.2"
+                        },
+                        {
+                            "measurement": "vertical",
+                            "domain": "sdav",
+                            "signature": 120,
+                            "dev": 2,
+                            "unit": 3298175268,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "t0": 1756410546786894,
+                            "tf": 1756410550186894,
+                            "version": "1.2"
+                        },
+                        {
+                            "measurement": "roll",
+                            "domain": "sdav",
+                            "signature": 120,
+                            "dev": 15,
+                            "unit": 3300018468,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "t0": 1756410546786894,
+                            "tf": 1756410550186894,
+                            "version": "1.2"
+                        },
+                        {
+                            "measurement": "yaw",
+                            "domain": "sdav",
+                            "signature": 120,
+                            "dev": 13,
+                            "unit": 3300018468,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "t0": 1756410546786894,
+                            "tf": 1756410550186894,
+                            "version": "1.2"
+                        },
+                        {
+                            "measurement": "pitch",
+                            "domain": "sdav",
+                            "signature": 120,
+                            "dev": 14,
+                            "unit": 3300018468,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "t0": 1756410546786894,
+                            "tf": 1756410550186894,
+                            "version": "1.2"
+                        },
+                        {
+                            "measurement": "roll_rate",
+                            "domain": "sdav",
+                            "signature": 120,
+                            "dev": 38,
+                            "unit": 3300014372,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "t0": 1756410546786894,
+                            "tf": 1756410550186894,
+                            "version": "1.2"
+                        },
+                        {
+                            "measurement": "yaw_rate",
+                            "domain": "sdav",
+                            "signature": 120,
+                            "dev": 36,
+                            "unit": 3300014372,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "t0": 1756410546786894,
+                            "tf": 1756410550186894,
+                            "version": "1.2"
+                        },
+                        {
+                            "measurement": "pitch_rate",
+                            "domain": "sdav",
+                            "signature": 120,
+                            "dev": 37,
+                            "unit": 3300014372,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "t0": 1756410546786894,
+                            "tf": 1756410550186894,
+                            "version": "1.2"
+                        }
+                    ],
+                    "location": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "noiseAccelStddevX": "0",
+                    "noiseAccelStddevY": "0",
+                    "noiseAccelStddevZ": "0",
+                    "noiseGyroBiasX": "0",
+                    "noiseGyroBiasY": "0",
+                    "noiseGyroBiasZ": "0",
+                    "noiseGyroStddevX": "0",
+                    "noiseGyroStddevY": "0",
+                    "noiseGyroStddevZ": "0",
+                    "noiseSeed": "0",
+                    "sensorTick": "0.0"
+                },
+                {
+                    "kind": "GNSS",
+                    "description": "",
+                    "model": "carla.sensor.other.gnss",
+                    "firmware": "",
+                    "interferences": [],
+                    "readings": [
+                        {
+                            "measurement": "longitude",
+                            "domain": "sdav",
+                            "signature": 120,
+                            "dev": 7,
+                            "unit": 3300018468,
+                            "t0": 1756410546786894,
+                            "tf": 1756410550186894
+                        },
+                        {
+                            "measurement": "latitude",
+                            "domain": "sdav",
+                            "signature": 120,
+                            "dev": 8,
+                            "unit": 3300018468,
+                            "t0": 1756410546786894,
+                            "tf": 1756410550186894
+                        },
+                        {
+                            "measurement": "altitude",
+                            "domain": "sdav",
+                            "signature": 120,
+                            "dev": 9,
+                            "unit": 3298183460,
+                            "t0": 1756410546786894,
+                            "tf": 1756410550186894
+                        }
+                    ],
+                    "location": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "noiseAltBias": "0.0",
+                    "noiseAltStddev": "0",
+                    "noiseLatBias": "0.0",
+                    "noiseLatStddev": "0",
+                    "noiseLonBias": "0.0",
+                    "noiseLonStddev": "0",
+                    "noiseSeed": "0",
+                    "sensorTick": "0.0"
+                },
+                {
+                    "kind": "KITTI",
+                    "description": "KITTI data collector that uses the camera and lidar sensors described in this context file",
+                    "model": "dataset_collector_kitti",
+                    "firmware": "",
+                    "interferences": [],
+                    "readings": [
+                        {
+                            "measurement": "image_2",
+                            "domain": "sdav",
+                            "signature": 120,
+                            "dev": 0,
+                            "unit": 83951617,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "t0": 1756410546786894,
+                            "tf": 1756410550186894
+                        },
+                        {
+                            "measurement": "label_2",
+                            "domain": "sdav",
+                            "signature": 120,
+                            "dev": 1,
+                            "unit": 84017153,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "t0": 1756410546786894,
+                            "tf": 1756410550186894
+                        },
+                        {
+                            "measurement": "velodyne",
+                            "domain": "sdav",
+                            "signature": 120,
+                            "dev": 2,
+                            "unit": 84082689,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "t0": 1756410546786894,
+                            "tf": 1756410550186894
+                        },
+                        {
+                            "measurement": "planes",
+                            "domain": "sdav",
+                            "signature": 120,
+                            "dev": 0,
+                            "unit": 84148225,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0,
+                            "t0": 1756410546786894,
+                            "tf": 1756410550186894
+                        }
+                    ],
+                    "location": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "sensorTick": 0.1
+                },
+                {
+                    "kind": "CAMERA",
+                    "description": "Frontal Camera",
+                    "model": "front",
+                    "firmware": "",
+                    "interferences": [],
+                    "readings": [
+                        {
+                            "measurement": "BGRRAW",
+                            "domain": "sdav",
+                            "signature": 120,
+                            "dev": 0,
+                            "unit": 35979265,
+                            "t0": 1756410546786894,
+                            "tf": 1756410550186894
+                        }
+                    ],
+                    "location": {
+                        "x": 2.5,
+                        "y": 0,
+                        "z": 1.0
+                    },
+                    "rotation": {
+                        "pitch": 0,
+                        "yaw": 0,
+                        "roll": 0
+                    },
+                    "lens": "default",
+                    "bloomIntensity": "0.675",
+                    "fov": "100",
+                    "fstop": "1.4",
+                    "width": 1920,
+                    "height": 1080,
+                    "iso": "100.0",
+                    "gamma": "2.2",
+                    "lensFlareIntensity": "0.1",
+                    "sensorTick": "0.0",
+                    "shutterSpeedFloat": "200.0",
+                    "lensCircleFalloff": "5.0",
+                    "lensCircleMultiplier": "0.0",
+                    "lensK": "-1.0",
+                    "lensKcube": "0.0",
+                    "lensXSize": "0.08",
+                    "lensYSize": "0.08",
+                    "minFstop": "1.2",
+                    "bladeCount": "5",
+                    "exposureMode": "histogram",
+                    "exposureCompensation": "0.0",
+                    "exposureMinBright": "10.0",
+                    "exposureMaxBright": "12.0",
+                    "exposureSpeedUp": "3.0",
+                    "exposureSpeedDown": "1.0",
+                    "calibrationConstant": "16.0",
+                    "focalDistance": "1000.0",
+                    "blurAmount": "1.0",
+                    "blurRadius": "0.0",
+                    "motionBlurIntensity": "0.45",
+                    "motionBlurMaxDistortion": "0.35",
+                    "motionBlurMinObjectScreenSize": "0.1",
+                    "slope": "0.88",
+                    "toe": "0.55",
+                    "shoulder": "0.26",
+                    "blackClip": "0.0",
+                    "whiteClip": "0.04",
+                    "temp": "6500.0",
+                    "tint": "0.0",
+                    "chromaticAberrationIntensity": "0.0",
+                    "chromaticAberrationOffset": "0.0",
+                    "enablePostprocessEffects": "true",
+                    "P0": "805.5356459301888 0.0 960.0 0.0 0.0 805.5356459301888 540.0 0.0 0.0 0.0 1.0 0.0",
+                    "P1": "805.5356459301888 0.0 960.0 0.0 0.0 805.5356459301888 540.0 0.0 0.0 0.0 1.0 0.0",
+                    "P2": "805.5356459301888 0.0 960.0 0.0 0.0 805.5356459301888 540.0 0.0 0.0 0.0 1.0 0.0",
+                    "P3": "805.5356459301888 0.0 960.0 0.0 0.0 805.5356459301888 540.0 0.0 0.0 0.0 1.0 0.0",
+                    "R0_rect": "1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0",
+                    "Tr_velo_to_cam": "0.0 -1.0 0.0 -3.4187889298209484e-05 0.0 0.0 -1.0 -0.8999999761581421 1.0 0.0 0.0 -3.000006966793194",
+                    "TR_imu_to_velo": "1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0"
+                },
+                {
+                    "kind": "LIDAR",
+                    "description": "",
+                    "model": "carala.sendor.lidar.ray_cast",
+                    "firmware": "",
+                    "interferences": [],
+                    "readings": [
+                        {
+                            "measurement": "PCD_MONOCROMATIC",
+                            "domain": "sdav",
+                            "signature": 120,
+                            "dev": 0,
+                            "unit": 50397185,
+                            "t0": 1756410546786894,
+                            "tf": 1756410550186894
+                        }
+                    ],
+                    "location": {
+                        "x": -0.5,
+                        "y": 0.0,
+                        "z": 1.899999976158142
+                    },
+                    "rotation": {
+                        "pitch": 0,
+                        "yaw": 0,
+                        "roll": 0
+                    },
+                    "channels": "32",
+                    "range": "120",
+                    "pointsPerSecond": "100000",
+                    "rotationFrequency": "10",
+                    "upperFov": "2",
+                    "lowerFov": "-25",
+                    "horizontalFov": "360.0",
+                    "atmosphereAttenuationRate": "0.004",
+                    "dropoffGeneralRate": "0.3",
+                    "dropoffIntensityLimit": "0.7",
+                    "dropoffZeroIntensity": "0.4",
+                    "sSensorTick": 0.0,
+                    "noiseStddev": "0.02",
+                    "sensorTick": "0.0"
+                }
+            ],
+            "driver": {
+                "name": "SDAV-RSS@v0",
+                "capabilities": {
+                    "collisionAheadTime": 1.5,
+                    "emergencyStop": 0.4
+                },
+                "behavior": {
+                    "ignoreTrafficLight": true,
+                    "maxSpeed": 41.0,
+                    "overtakeAllowed": false,
+                    "overTakecounterRecover": 35,
+                    "safetyTime": 4.0,
+                    "sampleResolution": 4.5,
+                    "speedDecreate": 15.0,
+                    "speedLimitDistance": 3.0,
+                    "tailgateSpeed": 51.0
+                }
+            },
+            "telemetry": [
+                {
+                    "measurement": "drag",
+                    "domain": "sdav",
+                    "signature": 120,
+                    "dev": 6,
+                    "unit": 3298208036,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                },
+                {
+                    "measurement": "gear",
+                    "domain": "sdav",
+                    "signature": 120,
+                    "dev": 10,
+                    "unit": 2550136838,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                },
+                {
+                    "measurement": "engine_rpm",
+                    "domain": "sdav",
+                    "signature": 120,
+                    "dev": 11,
+                    "unit": 3297917220,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                },
+                {
+                    "measurement": "longitudinal_speed",
+                    "domain": "sdav",
+                    "signature": 120,
+                    "dev": 3,
+                    "unit": 3298179364,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                },
+                {
+                    "measurement": "lateral_speed",
+                    "domain": "sdav",
+                    "signature": 120,
+                    "dev": 4,
+                    "unit": 3298179364,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                },
+                {
+                    "measurement": "vertical_speed",
+                    "domain": "sdav",
+                    "signature": 120,
+                    "dev": 5,
+                    "unit": 3298179364,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                }
+            ],
+            "actuation": [
+                {
+                    "measurement": "steering",
+                    "domain": "sdav",
+                    "signature": 120,
+                    "dev": 31,
+                    "unit": 3300018468,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                },
+                {
+                    "measurement": "throttle",
+                    "domain": "sdav",
+                    "signature": 120,
+                    "dev": 32,
+                    "unit": 3298175268,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                },
+                {
+                    "measurement": "brake",
+                    "domain": "sdav",
+                    "signature": 120,
+                    "dev": 33,
+                    "unit": 3298175268,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                },
+                {
+                    "measurement": "reverse",
+                    "domain": "sdav",
+                    "signature": 120,
+                    "dev": 34,
+                    "unit": 2550136838,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                },
+                {
+                    "measurement": "handbrake",
+                    "domain": "sdav",
+                    "signature": 120,
+                    "dev": 35,
+                    "unit": 2550136838,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                }
+            ],
+            "battery": {},
+            "suspension": {},
+            "motion_vectors": [
+                {
+                    "measurement": "EGO.Destination",
+                    "domain": "sdav",
+                    "available": true,
+                    "signature": 120,
+                    "dev": 41,
+                    "unit": 537853953,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                },
+                {
+                    "measurement": "EGO.Reference",
+                    "domain": "sdav",
+                    "available": true,
+                    "signature": 120,
+                    "dev": 16,
+                    "unit": 537657345,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                },
+                {
+                    "measurement": "Objects.Camera",
+                    "domain": "sdav",
+                    "available": true,
+                    "signature": 120,
+                    "dev": 20,
+                    "unit": 536870913,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                },
+                {
+                    "measurement": "Objects.LIDAR",
+                    "domain": "sdav",
+                    "available": true,
+                    "signature": 120,
+                    "dev": 21,
+                    "unit": 536870913,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                },
+                {
+                    "measurement": "Objects.RADAR",
+                    "domain": "sdav",
+                    "available": false,
+                    "signature": 120,
+                    "dev": 22,
+                    "unit": 536870913,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                },
+                {
+                    "measurement": "Objects.CAM",
+                    "domain": "sdav",
+                    "available": false,
+                    "signature": 120,
+                    "dev": 26,
+                    "unit": 536870913,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                },
+                {
+                    "measurement": "Objects.CPM",
+                    "domain": "sdav",
+                    "available": false,
+                    "signature": 120,
+                    "dev": 28,
+                    "unit": 536870913,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                },
+                {
+                    "measurement": "Objects.Fuser",
+                    "domain": "sdav",
+                    "available": true,
+                    "signature": 120,
+                    "dev": 23,
+                    "unit": 536870913,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                },
+                {
+                    "measurement": "EGO.Waypoint.Path",
+                    "domain": "sdav",
+                    "available": true,
+                    "signature": 120,
+                    "dev": 29,
+                    "unit": 537788417,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                },
+                {
+                    "measurement": "EGO.Waypoint.Motion",
+                    "domain": "sdav",
+                    "available": true,
+                    "signature": 120,
+                    "dev": 30,
+                    "unit": 537788417,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "t0": 1756410546786894,
+                    "tf": 1756410550186894
+                }
+            ],
+            "capabilities": {},
+            "behavior": {}
+        }
+    ],
+    "trafficData": [],
+    "environment": {
+        "trafficConditions": [
+            {
+                "type": "TRAFFIC_LIGHTS",
+                "present": false
+            },
+            {
+                "type": "TRAFFIC_SIGNS",
+                "present": false
+            }
+        ],
+        "simulator": {
+            "name": "Carla",
+            "version": "3ab2de548-dirty",
+            "url": ""
+        },
+        "location": {
+            "simulator": {
+                "name": "Carla",
+                "version": "1.0.0",
+                "url": ""
+            },
+            "description": "Town04 with additional road features",
+            "map": "Carla/Maps/Town04_Lisha"
+        },
+        "simulatorSettings": {
+            "randomSeed": {
+                "value": 11,
+                "description": ""
+            },
+            "sunAltitudeAngle": 15,
+            "cloudiness": 0,
+            "precipitation": 0,
+            "precipitationDeposits": 0,
+            "windIntensity": 0,
+            "fogDensity": 0,
+            "fogDistance": 0,
+            "fogFalloff": 0,
+            "wetness": 0,
+            "trafficSettings": {
+                "vehicleCount": 80,
+                "rangeBackgorundVehicleSpawn": {
+                    "xMin": -10,
+                    "xMax": 200,
+                    "yMin": 200,
+                    "yMax": 300,
+                    "yStep": 3.5,
+                    "xStep": 15
+                }
+            }
+        }
+    },
+    "climateKind": "SUNNY"
+}

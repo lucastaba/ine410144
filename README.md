@@ -6,5 +6,4 @@ Available Exercise solutions:
 - [Exercise 1 - Vehicle Dynamics Analysis](./exercise_1/SOLUTION.md)
 - [Exercise 2 - World and Object Representation](./exercise_2/SOLUTION.pdf)
 - [Exercise 3 - State Estimation and Positioning](./exercise_3/SOLUTION.md)
-
-# Jira
+- [Exercise 5 - Camera and LIDAR](./exercise_5/NOTES.md)
